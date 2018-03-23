@@ -8,6 +8,7 @@ const options = yargs
     number: {alias: 'n', required: true},
     hours: {alias: 'h'},
     message: {alias: 'm'},
+    'dry-run': {default: true},
   })
   .demand(1).argv
 
