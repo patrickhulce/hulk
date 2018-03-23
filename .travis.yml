@@ -1,0 +1,12 @@
+dist: trusty
+language: node_js
+cache: yarn
+notifications:
+  email: false
+node_js:
+  - v9
+  - v8
+script:
+  - npm test
+after_success:
+  - npm run semantic-release

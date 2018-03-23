@@ -1,0 +1,31 @@
+{
+  "name": "@patrickhulce/scripts",
+  "version": "0.0.0",
+  "description": "Collection of useful scripts.",
+  "bin": {
+    "hulk": "./bin/hulk.js"
+  },
+  "scripts": {
+    "test": "lint",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickhulce/hulk.git"
+  },
+  "author": "Patrick Hulce <patrick.hulce@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patrickhulce/hulk/issues"
+  },
+  "homepage": "https://github.com/patrickhulce/hulk#readme",
+  "devDependencies": {
+    "@patrickhulce/lint": "^2.1.0",
+    "semantic-release": "^11.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "shelljs": "^0.8.1",
+    "yargs": "^11.0.0"
+  }
+}
