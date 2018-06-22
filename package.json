@@ -21,6 +21,7 @@
   "homepage": "https://github.com/patrickhulce/hulk#readme",
   "devDependencies": {
     "@patrickhulce/lint": "^2.1.0",
+    "@types/shelljs": "^0.8.0",
     "semantic-release": "^11.0.0"
   },
   "dependencies": {
