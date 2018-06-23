@@ -25,8 +25,14 @@
     "semantic-release": "^11.0.0"
   },
   "dependencies": {
+    "conventional-changelog-writer": "^4.0.0",
+    "conventional-commits-parser": "^3.0.0",
+    "get-stream": "^3.0.0",
+    "git-url-parse": "^9.0.1",
+    "into-stream": "^3.1.0",
     "jimp": "^0.2.28",
     "lodash": "^4.17.5",
+    "semver": "^5.5.0",
     "shelljs": "^0.8.1",
     "yargs": "^11.0.0"
   }
