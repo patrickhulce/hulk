@@ -41,7 +41,7 @@ async function go() {
   }
 }
 
-go().catch(e => {
-  console.error(e)
+go().catch(err => {
+  console.error(err)
   process.exit(1)
 })

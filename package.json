@@ -19,6 +19,21 @@
     "url": "https://github.com/patrickhulce/hulk/issues"
   },
   "homepage": "https://github.com/patrickhulce/hulk#readme",
+  "config": {
+    "eslint": {
+      "rules": {
+        "func-names": [
+          "error",
+          "always"
+        ],
+        "quote-props": 0,
+        "no-extra-parens": 0,
+        "no-console": 0,
+        "space-before-function-paren": 0,
+        "curly": 0
+      }
+    }
+  },
   "devDependencies": {
     "@patrickhulce/lint": "^2.1.0",
     "@types/shelljs": "^0.8.0",
