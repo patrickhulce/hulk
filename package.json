@@ -30,6 +30,7 @@
     "get-stream": "^3.0.0",
     "git-url-parse": "^9.0.1",
     "into-stream": "^3.1.0",
+    "isomorphic-fetch": "^2.2.1",
     "jimp": "^0.2.28",
     "lodash": "^4.17.5",
     "semver": "^5.5.0",
