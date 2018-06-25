@@ -42,6 +42,7 @@
     "semantic-release": "^11.0.0"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
     "conventional-changelog-writer": "^4.0.0",
     "conventional-commits-parser": "^3.0.0",
     "get-stream": "^3.0.0",
