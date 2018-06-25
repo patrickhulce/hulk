@@ -26,6 +26,8 @@
           "error",
           "always"
         ],
+        "operator-linebreak": 0,
+        "indent": 0,
         "quote-props": 0,
         "no-extra-parens": 0,
         "no-console": 0,
@@ -44,6 +46,7 @@
     "conventional-commits-parser": "^3.0.0",
     "get-stream": "^3.0.0",
     "git-url-parse": "^9.0.1",
+    "inquirer": "^6.0.0",
     "into-stream": "^3.1.0",
     "isomorphic-fetch": "^2.2.1",
     "jimp": "^0.2.28",

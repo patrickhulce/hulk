@@ -11,7 +11,7 @@ const options = yargs
     prerelease: {type: 'boolean'},
     branch: {alias: 'b', default: 'master'},
     'node-version': {default: 'v8'},
-    'dry-run': {type: 'boolean'},
+    yes: {type: 'boolean'},
   })
   .command('git-rewrite', 'rewrite git metadata', {
     number: {alias: 'n', required: true, type: 'number'},
