@@ -19,6 +19,9 @@
     "url": "https://github.com/patrickhulce/hulk/issues"
   },
   "homepage": "https://github.com/patrickhulce/hulk#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "config": {
     "eslint": {
       "rules": {
