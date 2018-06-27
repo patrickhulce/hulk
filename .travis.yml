@@ -9,4 +9,4 @@ node_js:
 script:
   - npm test
 after_success:
-  - npm run semantic-release
+  - ./bin/hulk.js npm-publish --yes

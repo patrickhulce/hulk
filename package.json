@@ -6,8 +6,7 @@
     "hulk": "./bin/hulk.js"
   },
   "scripts": {
-    "test": "lint",
-    "semantic-release": "semantic-release"
+    "test": "lint"
   },
   "repository": {
     "type": "git",
@@ -41,8 +40,7 @@
   },
   "devDependencies": {
     "@patrickhulce/lint": "^2.1.0",
-    "@types/shelljs": "^0.8.0",
-    "semantic-release": "^11.0.0"
+    "@types/shelljs": "^0.8.0"
   },
   "dependencies": {
     "chalk": "^2.4.1",
