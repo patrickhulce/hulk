@@ -6,3 +6,7 @@
 [![Dependencies](https://david-dm.org/patrickhulce/hulk.svg)](https://david-dm.org/patrickhulce/hulk)
 
 Collection of useful scripts.
+
+- npm-publish
+- git-rewrite
+- tiny-image
