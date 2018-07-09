@@ -4,6 +4,7 @@ const yargs = require('yargs')
 const npmPublish = require('../lib/npm-publish')
 const gitRewrite = require('../lib/git-rewrite')
 const tinyImage = require('../lib/tiny-image')
+const seamlessLoop = require('../lib/seamless-loop')
 
 const options = yargs
   .command('npm-publish', 'publish to npm and GitHub and such', {
@@ -23,6 +24,11 @@ const options = yargs
     output: {alias: 'o'},
     force: {alias: 'f'},
   })
+  .command('seamless-loop', 'shrink image to inlineable size', {
+    output: {alias: 'o'},
+    force: {alias: 'f'},
+    'target-duration': {alias: 's'},
+  })
   .demand(1).argv
 
 async function go() {
@@ -35,6 +41,9 @@ async function go() {
       break
     case 'tiny-image':
       await tinyImage(options)
+      break
+    case 'seamless-loop':
+      await seamlessLoop(options)
       break
     default:
       throw new Error('Invalid command')
