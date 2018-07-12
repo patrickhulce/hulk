@@ -2,6 +2,7 @@
 
 const yargs = require('yargs')
 const npmPublish = require('../lib/npm-publish')
+const travisTokens = require('../lib/travis-tokens')
 const gitRewrite = require('../lib/git-rewrite')
 const tinyImage = require('../lib/tiny-image')
 const seamlessLoop = require('../lib/seamless-loop')
@@ -14,6 +15,7 @@ const options = yargs
     'node-version': {default: 'v8'},
     yes: {type: 'boolean'},
   })
+  .command('travis-tokens', 'add NPM/GitHub tokens to travis repo', {})
   .command('git-rewrite', 'rewrite git metadata', {
     number: {alias: 'n', required: true, type: 'number'},
     hours: {alias: 'h', type: 'number'},
@@ -35,6 +37,9 @@ async function go() {
   switch (options._[0]) {
     case 'npm-publish':
       await npmPublish(options)
+      break
+    case 'travis-tokens':
+      await travisTokens(options)
       break
     case 'git-rewrite':
       await gitRewrite(options)
