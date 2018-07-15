@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const yargs = require('yargs')
+const ejectLint = require('../lib/eject-lint')
 const npmPublish = require('../lib/npm-publish')
 const travisTokens = require('../lib/travis-tokens')
 const gitRewrite = require('../lib/git-rewrite')
@@ -16,6 +17,10 @@ const options = yargs
     yes: {type: 'boolean'},
   })
   .command('travis-tokens', 'add NPM/GitHub tokens to travis repo', {})
+  .command('eject-lint', 'write lint configurations to files', {
+    typescript: {type: 'boolean'},
+    react: {type: 'boolean'},
+  })
   .command('git-rewrite', 'rewrite git metadata', {
     number: {alias: 'n', required: true, type: 'number'},
     hours: {alias: 'h', type: 'number'},
@@ -35,6 +40,9 @@ const options = yargs
 
 async function go() {
   switch (options._[0]) {
+    case 'eject-lint':
+      await ejectLint(options)
+      break
     case 'npm-publish':
       await npmPublish(options)
       break
