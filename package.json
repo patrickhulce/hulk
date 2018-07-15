@@ -39,7 +39,7 @@
     }
   },
   "devDependencies": {
-    "@patrickhulce/lint": "^2.1.0",
+    "@patrickhulce/lint": "^3.0.2",
     "@types/shelljs": "^0.8.0"
   },
   "dependencies": {
