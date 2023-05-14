@@ -3,7 +3,6 @@
 const yargs = require('yargs')
 const ejectLint = require('../lib/eject-lint')
 const npmPublish = require('../lib/npm-publish')
-const travisTokens = require('../lib/travis-tokens')
 const gitRewrite = require('../lib/git-rewrite')
 const tinyImage = require('../lib/tiny-image')
 const seamlessLoop = require('../lib/seamless-loop')
@@ -16,7 +15,6 @@ const options = yargs
     'node-version': {default: 'v8'},
     yes: {type: 'boolean'},
   })
-  .command('travis-tokens', 'add NPM/GitHub tokens to travis repo', {})
   .command('eject-lint', 'write lint configurations to files', {
     typescript: {type: 'boolean'},
     react: {type: 'boolean'},
@@ -45,9 +43,6 @@ async function go() {
       break
     case 'npm-publish':
       await npmPublish(options)
-      break
-    case 'travis-tokens':
-      await travisTokens(options)
       break
     case 'git-rewrite':
       await gitRewrite(options)
