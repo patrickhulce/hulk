@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: ['main']
 jobs:
-  ci:
+  CI:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -19,3 +19,6 @@ jobs:
       - run: yarn test
       - run: ./bin/hulk.js npm-publish --yes
         if: github.event_name != 'pull_request'
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

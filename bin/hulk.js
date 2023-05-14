@@ -11,8 +11,8 @@ const options = yargs
   .command('npm-publish', 'publish to npm and GitHub and such', {
     lerna: {},
     prerelease: {type: 'boolean'},
-    branch: {alias: 'b', default: 'master'},
-    'node-version': {default: 'v8'},
+    'required-branch': {alias: 'b', default: 'main'},
+    'required-node-version': {default: 'v18'},
     yes: {type: 'boolean'},
   })
   .command('eject-lint', 'write lint configurations to files', {
