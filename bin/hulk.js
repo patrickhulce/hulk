@@ -12,7 +12,7 @@ const options = yargs
     lerna: {},
     prerelease: {type: 'boolean'},
     'required-branch': {alias: 'b', default: 'main'},
-    'required-node-version': {default: 'v18'},
+    'required-node-version': {default: 'v24'},
     yes: {type: 'boolean'},
   })
   .command('eject-lint', 'write lint configurations to files', {

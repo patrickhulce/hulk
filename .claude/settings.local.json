@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "WebSearch",
+      "Bash(yarn test:*)",
+      "Bash(./node_modules/.bin/eslint:*)"
+    ]
+  }
+}
